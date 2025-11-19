@@ -12,8 +12,6 @@
   --color9: #1B4D3E ;
   --color10: #2C5F2D ;
 
-
-
   --accent-color: #B8860B ;
 }
 
@@ -24,9 +22,31 @@
 
 body {
     background-color: var(--color7);
+    margin: 0;
+    padding: 0;
 }
 
 header h1 {
-    text-align: center;
     font-family: "rochester";
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#alignement {
+    display: flex;
+    align-items: center;
+        justify-content: center;
+    gap: 15px;
+}
+
+#imglogo {
+    display: block;
+    height: 60px;
+    width: auto;
 }

@@ -59,6 +59,13 @@ header h1 {
     
 }
 
+#leftderoulant {
+    margin-left: 100px
+}
+#rightderoulant {
+    margin-right: 100px
+}
+
 /*_-_-_-_-_-_-_-_-_-_-_-_ HEADER TRANSITION _-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 
@@ -97,11 +104,16 @@ header.scrolled #head .nav:last-child {
 }
 
 header.scrolled #head {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 }
 
+header.scrolled .titremenu {
+    font-size: 30px;
+    transition: 300ms;
+    border-radius: 10px;
+}
 
-/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 nav{
     background-color: white;
@@ -196,5 +208,4 @@ main p {
     text-align: center;
     margin: auto;
     margin-top: 200px;
-   
 }

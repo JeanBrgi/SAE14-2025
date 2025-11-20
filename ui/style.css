@@ -38,7 +38,7 @@ header h1 {
     margin: 10;
 }
 
-#logo {
+#head {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -48,6 +48,8 @@ header h1 {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    transition: transform 250ms ease, opacity 250ms ease, height 250ms ease;
+    will-change: transform, opacity;
 }
 
 #imglogo {
@@ -57,7 +59,49 @@ header h1 {
     
 }
 
+/*_-_-_-_-_-_-_-_-_-_-_-_ HEADER TRANSITION _-_-_-_-_-_-_-_-_-_-_-_-_*/
 
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#alignement {
+    transition: transform 250ms ease, opacity 250ms ease, height 250ms ease;
+    will-change: transform, opacity;
+}
+
+#head .nav {
+    transition: transform 250ms ease;
+    will-change: transform;
+}
+
+header.scrolled #alignement {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    filter: blur(5px);
+}
+
+header.scrolled #head .nav:first-child {
+    transform: translateX(240px);
+}
+
+header.scrolled #head .nav:last-child {
+    transform: translateX(-240px); 
+}
+
+header.scrolled #head {
+    backdrop-filter: blur(2px);
+}
+
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 nav{
     background-color: white;

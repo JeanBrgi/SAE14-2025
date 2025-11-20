@@ -11,9 +11,6 @@ document.querySelectorAll('.titremenu').forEach(item => {
 });
 
 
-
-
-
 // Permet de garder le flou du main et la couleur du titre du menu déroulant quand je passe dans la sous-liste
 
 document.querySelectorAll('.sous').forEach(item => {
@@ -34,3 +31,20 @@ document.querySelectorAll('.sous').forEach(item => {
         }
     });
 });
+
+// Permet de detecter le scrrol
+
+(function() {
+    const header = document.querySelector('header');
+    const align = document.getElementById('alignement');
+    const threshold = align ? Math.max(40, Math.round(align.offsetHeight / 2)) : 50;
+
+    window.addEventListener('scroll', () => {
+        const y = window.scrollY || window.pageYOffset;
+        if (y > threshold) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }, { passive: true });
+})();

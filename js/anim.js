@@ -2,7 +2,6 @@
 
 document.querySelectorAll('.titremenu').forEach(item => {
     item.addEventListener('mouseenter', () => {
-        document.querySelector('main').style.filter = 'blur(3px)';
         document.querySelector('main').style.transition = '150ms';
     });
     item.addEventListener('mouseleave', () => {
@@ -15,7 +14,6 @@ document.querySelectorAll('.titremenu').forEach(item => {
 
 document.querySelectorAll('.sous').forEach(item => {
     item.addEventListener('mouseenter', () => {
-        document.querySelector('main').style.filter = 'blur(3px)';
         const parentLi = item.closest('li');
         const titreMenu = parentLi.querySelector('.titremenu');
         if (titreMenu) {

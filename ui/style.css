@@ -43,7 +43,7 @@ body {
 header h1 {
     font-family: "rochester";
     font-size: 40px;
-    margin: 10;
+    margin: 10px;
 }
 
 #head {
@@ -52,6 +52,7 @@ header h1 {
     background-color: transparent;
     border-radius: 50px;
     backdrop-filter: brightness(75%) blur(8px);
+    transition: 500ms;
 }
 
 #alignement {
@@ -118,19 +119,29 @@ header.scrolled #alignement {
 }
 
 header.scrolled #head .nav:first-child {
-    transform: translateX(240px);
+    transform: translateX(40%);
+    transform: scaleX(120%);
 }
 
 header.scrolled #head .nav:last-child {
-    transform: translateX(-240px); 
+    transform: translateX(-60%);
+    transform: scaleX(120%);
 }
 
 header.scrolled .titremenu {
     font-size: 30px;
     transition: 300ms;
-    border-radius: 10px;
 }
 
+header.scrolled #head {
+    transform: scaleX(80%);
+    transition: 500ms;
+    border-radius: 500px;
+}
+
+header.scrolled nav a {
+    border-bottom: none;
+}
 /*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 nav{
@@ -167,7 +178,10 @@ nav a{
     text-decoration: none;
     border-bottom: 2px solid var(--accent-color);
     padding: 10px 0px;
-    color: var(--color4)
+    color: var(--color4);
+    transition: 500ms;
+
+    
 }
 
 nav a:hover{
@@ -221,8 +235,26 @@ nav > ul li:hover .sous{
 
 
 main p {
-    width: 75%;
+    width: 70%;
     text-align: center;
     margin: auto;
     margin-top: 200px;
+    padding: 15px;
+    backdrop-filter: brightness(75%) blur(8px);
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#contenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.elt p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 }

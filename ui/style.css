@@ -55,6 +55,11 @@ header h1 {
     transition: 500ms;
 }
 
+#head:hover {
+    transform: scale(1.006);
+}
+
+
 #alignement {
     display: flex;
     align-items: center;
@@ -137,7 +142,9 @@ header.scrolled #head {
     transform: scaleX(80%);
     transition: 500ms;
     border-radius: 500px;
+    
 }
+
 
 header.scrolled nav a {
     border-bottom: none;

@@ -49,6 +49,9 @@ header h1 {
 #head {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+    border-radius: 50px;
+    backdrop-filter: brightness(75%) blur(8px);
 }
 
 #alignement {
@@ -88,11 +91,11 @@ header h1 {
 
 header {
     position: sticky;
-    top: 0;
+    top: 0;    
     z-index: 100;
-    margin: 10px;
-    border-radius: 15px   ;
-    backdrop-filter: blur(10px);
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 };
 
 #alignement {
@@ -102,7 +105,6 @@ header {
 
 #head .nav {
     transition: transform 250ms ease;
-    will-change: transform;
 }
 
 header.scrolled #alignement {
@@ -122,8 +124,6 @@ header.scrolled #head .nav:first-child {
 header.scrolled #head .nav:last-child {
     transform: translateX(-240px); 
 }
-
-
 
 header.scrolled .titremenu {
     font-size: 30px;

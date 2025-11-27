@@ -5,8 +5,7 @@
     const selectors = [
         'header',
         'nav', 
-        '.sidebar',
-        '#monElement'
+        'main'
     ];
     
     const align = document.getElementById('alignement');

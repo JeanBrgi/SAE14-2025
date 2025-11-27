@@ -39,6 +39,17 @@ body {
 
 }
 
+#arrowbounce {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    width: 450px;
+}
+
+main.scrolled #arrowbounce {
+    display: none;
+}
 
 header h1 {
     font-family: "rochester";
@@ -240,14 +251,17 @@ nav > ul li:hover .sous{
 
 
 main p {
-    width: 70%;
+    width: 50%;
     text-align: center;
     margin: auto;
-    margin-top: 200px;
     padding: 15px;
     backdrop-filter: brightness(75%) blur(8px);
     border: 3px solid black;
     border-radius: 20px;
+    transition: 1s;
+    position: absolute;
+    left: -9999px;
+    
 }
 
 #contenu {
@@ -261,5 +275,20 @@ main p {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70%;
+}
+
+.elt2 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10%;
+}
+
+
+main.scrolled p {
+    color:#1B4D3E;
+    display: block;
+    position: initial;
+    transform: translateY(-500px);
 }

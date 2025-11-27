@@ -55,9 +55,7 @@ header h1 {
     transition: 500ms;
 }
 
-#head:hover {
-    transform: scale(1.006);
-}
+
 
 
 #alignement {

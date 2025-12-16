@@ -302,13 +302,27 @@ main.scrolled p {
 
 @media screen and (max-width: 900px) {
 
+    header {
+        position: relative; 
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    
+    nav {
+        position: static;
+    }
+
     #head {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        padding-bottom: 15px;
-        border-radius: 0 0 30px 30px;
+        width: 100%;
+        border-radius: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        padding-bottom: 20px;
+        transform: none !important;
     }
 
     #leftderoulant1, #leftderoulant2, 
@@ -317,59 +331,54 @@ main.scrolled p {
     }
 
     #alignement {
-        margin-top: 15px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        opacity: 1 !important;
+        transform: none !important;
+        height: auto !important;
+        display: flex !important;
     }
-    
+
     #alignement h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
-    nav ul li {
-        width: auto;
-        padding: 0 10px;
-    }
-    
+
     .grpderoulant {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
     }
-
-    /* --- 2. MODIFICATION DE L'ANIMATION SCROLL --- */
     
-  
-    header.scrolled #head .nav:first-child {
-        transform: none;
+    nav ul li {
+        width: 100%;
     }
-
-    header.scrolled #head .nav:last-child {
-        transform: none;
-    }
-
-    header.scrolled #head {
-        transform: scale(0.95);
-        width: 95%;
+    
+    .titremenu {
+        border-bottom: 1px solid rgba(255,255,255,0.2); 
+        width: 80%;
         margin: auto;
-    }
-    
-    header.scrolled #alignement {
-        display: none; 
+        padding-bottom: 5px;
     }
 
-    
     main p {
-        width: 90%;
+        width: 85%;
         font-size: 16px;
-    }
-
-    main.scrolled p {
-        transform: translateY(-200px); 
-        margin-top: 60%;
+        margin-top: 50px;
+        position: relative;
+        transform: none !important;
+        opacity: 1 !important;
+        color: #F0F0F0;
+        background-color: rgba(0, 0, 0, 0.7);
     }
     
-    #arrowbounce {
-        width: 100px;
-        margin-top: 200px;
+    main.scrolled p {
+        transform: none;
+        margin-top: 50px;
     }
+
+    #arrowbounce {
+        display: none;
+    }
+
 }

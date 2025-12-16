@@ -297,6 +297,58 @@ main.scrolled p {
 }
 
 
+
+.page-secondaire {
+    background-attachment: fixed; 
+}
+
+.contenu-page {
+    max-width: 900px;
+    margin: 180px auto 50px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.contenu-page h2 {
+    font-family: "rochester", serif;
+    color: var(--accent-color);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+
+.page-secondaire main p {
+    opacity: 1 !important;
+    transform: none !important;
+    position: static;
+    width: 100%;
+    text-align: justify;
+    border: none;
+    background: none;
+    backdrop-filter: none;
+    color: #dddddd;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.img-flottante-gauche {
+    float: left;
+    width: 40%;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+}
+
+
+
 /*_-_-_-_-_-_-_-_-_-_-_-_    MEDIA QUERIES    _-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 
@@ -430,5 +482,21 @@ main.scrolled p {
     .sous a {
         border: none;
         padding: 15px;
+    }
+
+    .contenu-page {
+        margin-top: 20px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contenu-page h2 {
+        font-size: 35px;
+    }
+
+    .img-flottante-gauche {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
     }
 }

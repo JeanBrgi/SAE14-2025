@@ -350,7 +350,31 @@ main.scrolled p {
     border: 2px solid var(--accent-color);
 }
 
+.img-flottante-droite {
+    float: right;              /* Elle va à droite */
+    width: 40%;
+    margin-left: 25px;         /* Marge à gauche du coup */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
+.img-flottante-droite:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.img-flottante-gauche:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.bloc-histoire h3 {
+    color: var( --color10);
+    font-family: "sequel";
+    font-size: medium;
+}
 
 /*_-_-_-_-_-_-_-_-_-_-_-_    MEDIA QUERIES    _-_-_-_-_-_-_-_-_-_-_-_-_*/
 
@@ -497,7 +521,8 @@ main.scrolled p {
         font-size: 35px;
     }
 
-    .img-flottante-gauche {
+    .img-flottante-gauche,
+    .img-flottante-droite {
         float: none;
         width: 100%;
         margin: 0 0 20px 0;

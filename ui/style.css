@@ -408,4 +408,27 @@ main.scrolled p {
     .elt, .elt2 {
         margin: 0;
     }
+
+    #leftderoulant1, #leftderoulant2, 
+    #rightderoulant1, #rightderoulant2 {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    nav a {
+        color: white !important;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .sous {
+        background-color: #222 !important;
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .sous a {
+        border: none;
+        padding: 15px;
+    }
 }

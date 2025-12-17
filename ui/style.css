@@ -31,7 +31,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    background-image: url("../ui/pic/background3.jpg");
+    background-image: url("pic/background3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

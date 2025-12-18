@@ -180,6 +180,14 @@ header.scrolled #head {
 header.scrolled nav a {
     border-bottom: none;
 }
+
+.bloc-palmares {
+    background-color: rgba(255, 255, 255, 0.05); /* Fond très léger */
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--accent-color);
+    margin-top: 40px;
+}
 /*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 nav{
@@ -406,7 +414,9 @@ main.scrolled p {
         position: relative;
         height: auto;
         padding: 0;
+        margin-top: 10px;
         background-color: #000;
+        border-radius: 20px;
     }
 
     #head {
@@ -472,6 +482,7 @@ main.scrolled p {
     .sous {
         position: relative;
         background-color: #111;
+        transition: s;
     }
 
     #contenu {

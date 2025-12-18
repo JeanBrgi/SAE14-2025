@@ -237,38 +237,6 @@ nav a:hover{
 }
 
 
-.sous{
-    display: none;
-    box-shadow: 0px 1px 2px #CCC;
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-}
-
-nav > ul li:hover .sous{
-    display: block;
-
-}
-
-.sous li{
-    float: none;
-    width: 100%;
-    text-align: left;
-}
-.sous a{
-    padding: 10px;
-    border-bottom: none;
-}
-
-.sous a:hover{
-    border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
-}
-.deroulant > a::after{
-    font-size: 12px;
-}
-
 .titremenu {
     display: flex;
     align-items: center;
@@ -599,11 +567,6 @@ main.scrolled p {
     }
 
   
-    .sous {
-        position: relative;
-        background-color: #111;
-        transition: s;
-    }
 
     #contenu {
         display: flex;
@@ -649,17 +612,6 @@ main.scrolled p {
         border-bottom: 1px solid rgba(255,255,255,0.3);
     }
 
-    .sous {
-        background-color: #222 !important;
-        position: relative;
-        width: 100%;
-        box-shadow: none;
-    }
-
-    .sous a {
-        border: none;
-        padding: 15px;
-    }
 
     .contenu-page {
         margin-top: 20px;

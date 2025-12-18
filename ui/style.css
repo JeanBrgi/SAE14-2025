@@ -39,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: white !important;
 
 }
 
@@ -401,6 +402,121 @@ main.scrolled p {
     color: var( --color10);
     font-family: "sequel";
     font-size: medium;
+}
+
+/* =========================================
+   PAGE MODÈLES (SHOWROOM GRID & CARTES)
+   ========================================= */
+
+.showroom-grid {
+    display: grid; /* C'est cette ligne qui manquait ! */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 30px; 
+    padding: 10px;
+}
+
+.card-voiture {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden; 
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+}
+
+.card-voiture:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(184, 134, 11, 0.2); 
+    border-color: var(--accent-color);
+}
+
+.card-voiture img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-bottom: 3px solid var(--color2); 
+}
+
+.card-info {
+    padding: 20px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    font-family: "sequel", sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.card-info .desc {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-align: left; 
+    width: 90%;
+}
+
+.specs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+.btn-config {
+    margin-top: auto; 
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-config:hover {
+    background-color: var(--color2); 
+    border-color: var(--color2);
+}
+
+/* --- GESTION DES DOUBLES IMAGES --- */
+.double-img-container {
+    display: flex;
+    height: 200px; 
+    border-bottom: 3px solid var(--color2);
+}
+
+.double-img-container img {
+    width: 100%; /* Chacune prend la moitié */
+    height: 100%;
+    object-fit: cover;
+    border-bottom: none; 
+}
+
+.vuesecondaire {
+    display: none;
+    transition: 1s;
+}
+
+.vueprincipale {
+    width: 100%;
+}
+
+.card-voiture:hover .vueprincipale {
+    display: none;
+}
+.card-voiture:hover .vuesecondaire {
+    display: inline;
+    width: 100%;
 }
 
 /*_-_-_-_-_-_-_-_-_-_-_-_    MEDIA QUERIES    _-_-_-_-_-_-_-_-_-_-_-_-_*/

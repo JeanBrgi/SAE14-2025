@@ -198,6 +198,7 @@ header.scrolled nav a {
     border: 1px solid var(--accent-color);
     margin-top: 40px;
 }
+
 /*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 nav{
@@ -257,7 +258,6 @@ nav a:hover{
 
 }
 
-
 /* _-_-_-_-_-_-_-_-_-_-_-_ CONTENU ACCUEIL _-_-_-_-_-_-_-_-_-_-_-_ */
 
 #contenu {
@@ -269,7 +269,6 @@ nav a:hover{
     margin: 50px auto;
     padding: 20px;
 }
-
 
 main p {
     width: 90%;

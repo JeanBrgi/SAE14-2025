@@ -134,7 +134,7 @@ header {
     padding-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-};
+}
 
 #alignement {
     transition: transform 250ms ease, opacity 250ms ease, height 250ms ease;
@@ -371,7 +371,7 @@ main.scrolled .elt-img {
     margin-top: 20px;
     margin-bottom: 60px;
     font-size: 13px;
-    line-height: 1,3;
+    line-height: 1.3;
 }
 
 .img-flottante-gauche {
@@ -481,23 +481,6 @@ main.scrolled .elt-img {
     font-family: "sequel";
 }
 
-.btn-config {
-    margin-top: auto; 
-    display: block;
-    text-align: center;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn-config:hover {
-    background-color: var(--color2); 
-    border-color: var(--color2);
-}
 
 /* -_-_-_-_-_-_-_-_-_-_-_ GESTION DES DOUBLES IMAGES _-_-_-_-_-_-_-_-_-_-_- */
 .double-img-container {

@@ -62,12 +62,12 @@ body::before {
 }
 
 #arrowbounce {
-    transform: rotate(1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 450px;
-    width: 90px;
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    z-index: 50;
 }
 
 main.scrolled #arrowbounce {
@@ -708,10 +708,27 @@ footer {
     letter-spacing: 1px;
     
     position: relative;
-    z-index: 10;
+    z-index: 51;
+
+    
 }
 
 footer p {
     margin: 0;
     opacity: 0.8;
+}
+
+.footeraccueil {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.footeraccueil.scrolled {
+    position:initial !important;
+    width: initial;
 }

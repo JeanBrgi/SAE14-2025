@@ -274,21 +274,17 @@ main p {
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    padding: 30px;
     
     background: rgba(0, 0, 0, 0.7); 
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     
     color: #e0e0e0;
     font-size: .8rem;
     line-height: 1.6;
     
     opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s ease-out;
 
     font-family: "sequel";
 }
@@ -470,6 +466,8 @@ main.scrolled .elt-img {
     line-height: 1.4;
     text-align: left; 
     width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    padding: 20px;
 }
 
 .specs {
@@ -690,6 +688,15 @@ main.scrolled .elt-img {
     .elt-img {
         display: none;
     }
+
+        .fiche-auteur {
+        flex-direction: column;
+        text-align: center;
+    }
+    .photo-auteur img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -730,4 +737,85 @@ footer p {
 .footeraccueil.scrolled {
     position:initial !important;
     width: initial;
+}
+
+
+
+
+.conteneur-apropos {
+    max-width: 1050px;
+    margin: 100px auto 50px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    color: #e0e0e0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-family: 'sequel', sans-serif;
+}
+
+.conteneur-apropos h1 {
+    text-align: center;
+    color: var(--color2);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--color2);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.bloc-info {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.bloc-info h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+
+.fiche-auteur {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.photo-auteur img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 2px solid var(--color2);
+}
+
+.bio-auteur h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.bio-auteur h3 {
+    margin-top: 5px;
+    color: #a0a0a0;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.liste-tech {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liste-tech li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.liste-tech li strong {
+    color: var(--color2);
 }

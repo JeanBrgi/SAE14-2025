@@ -407,6 +407,7 @@ main.scrolled .elt-img {
 }
 
 .bloc-histoire h3 {
+    padding: 30px;
     color: var( --color10);
     font-family: "sequel";
     font-size: medium;

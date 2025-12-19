@@ -168,7 +168,16 @@ header.scrolled #head .nav:last-child {
 header.scrolled .titremenu {
     font-size: 30px;
     transition: 300ms;
+    color: var(--color2);
+
+
 }
+
+header.scrolled .titremenu:hover{
+    transform: translateY(-10px);
+    transform: scale(115%);
+}
+
 
 header.scrolled #head {
     transform: scaleX(80%);
@@ -302,17 +311,18 @@ main.scrolled p {
 }
 
 .contenu-page {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 180px auto 50px auto;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 20px;
     border: 1px solid #333;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-family: "sequel";
 }
 
 .contenu-page h2 {
-    font-family: "rochester", serif;
+    font-family: "rochester", serif !important;
     color: var(--accent-color);
     font-size: 50px;
     text-align: center;
@@ -320,6 +330,7 @@ main.scrolled p {
     border-bottom: 1px solid #444;
     padding-bottom: 20px;
 }
+
 
 
 .page-secondaire main p {
@@ -332,9 +343,10 @@ main.scrolled p {
     background: none;
     backdrop-filter: none;
     color: #dddddd;
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 13px;
+    line-height: 1,3;
 }
 
 .img-flottante-gauche {
@@ -344,6 +356,7 @@ main.scrolled p {
     margin-bottom: 15px;
     border-radius: 10px;
     border: 2px solid var(--accent-color);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .img-flottante-droite {
@@ -359,6 +372,8 @@ main.scrolled p {
 .img-flottante-droite:hover {
     transform: scale(1.03);
     box-shadow: 0 0 15px var(--accent-color);
+    
+
 }
 
 .img-flottante-gauche:hover {
@@ -427,8 +442,7 @@ main.scrolled p {
     line-height: 1.4;
     text-align: left; 
     width: 90%;
-    font-family: "sequel";
-    font-size: smaller;
+
 
 }
 
@@ -613,12 +627,6 @@ main.scrolled p {
     }
 
 
-    .contenu-page {
-        margin-top: 20px;
-        width: 90%;
-        padding: 20px;
-    }
-
     .contenu-page h2 {
         font-size: 35px;
     }
@@ -636,6 +644,12 @@ main.scrolled p {
         padding: 10px;
         box-sizing: border-box;
     }
+    /*
+    .contenu-page {
+        margin-top: 20px;
+        width: 90%;
+        padding: 20px;
+    }*/
 }
 
 

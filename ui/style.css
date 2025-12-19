@@ -258,50 +258,76 @@ nav a:hover{
 }
 
 
-main p {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    padding: 15px;
-    backdrop-filter: brightness(75%) blur(8px);
-    border: 3px solid black;
-    border-radius: 20px;
-    transition: 1s;
-    position: absolute;
-    opacity: 0;
-    transform: translateY(100px);
-    
-}
+/* _-_-_-_-_-_-_-_-_-_-_-_ CONTENU ACCUEIL _-_-_-_-_-_-_-_-_-_-_-_ */
 
 #contenu {
     display: grid;
+    margin-top: 300px !important;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
 }
 
-.elt p {
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70%;
+
+main p {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
 }
 
-.elt2 {
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+main p strong {
+    display: block;
+    font-family: "rochester", serif;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.elt-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s ease-out;
+}
+
+.elt-img img {
+    max-width: 150px;
+    height: auto;
+    filter: drop-shadow(0 0 10px var(--accent-color));
 }
 
 
 main.scrolled p {
-    color:#F0F0F0;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: block;
-    position: initial;
     opacity: 1;
-    transform: translateY(-500px);
+    transform: translateY(0);
+}
+main.scrolled .elt-img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.elt p, .elt2 p {
+    margin: 0; 
 }
 
 
@@ -472,7 +498,7 @@ main.scrolled p {
     border-color: var(--color2);
 }
 
-/* --- GESTION DES DOUBLES IMAGES --- */
+/* -_-_-_-_-_-_-_-_-_-_-_ GESTION DES DOUBLES IMAGES _-_-_-_-_-_-_-_-_-_-_- */
 .double-img-container {
     display: flex;
     height: 200px; 
@@ -648,6 +674,20 @@ main.scrolled p {
         width: 90%;
         padding: 20px;
     }*/
+
+    #contenu {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    main p {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .elt-img {
+        display: none;
+    }
 }
 
 
